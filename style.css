@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222831;
+}
+
+.me {
+    font-size: 40px;
+    font-family: "Protest Guerrilla", sans-serif;
+    padding-bottom: 32px;
+    letter-spacing: 7px;
+    padding-left: 12px;
+}
+
+.sp {
+    font-size: 40px;
+    width: 419px;
+    text-align: center;
+    display: block;
+    padding-bottom: 404px;
+    letter-spacing: 5px;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+span {
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(./wave.png);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FF2A2A;
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 100%;
+    animation: animate 5s infinite linear;
+    -webkit-box-reflect: below -30px
+    linear-gradient(transparent,rgba(0,0,0,0,4)) ;
+}
+@keyframes animate {
+    50%{
+        background-position-x: 100%;
+    }
+}
